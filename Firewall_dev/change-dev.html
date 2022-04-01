@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   </head>
+   <style>
+    img{
+    height: 500px;
+    width: 450px;
+    }
+    h1{
+    color: darkgreen;
+    margin-top: 20px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    }
+    .button{
+    margin-left: 45%;
+    border-radius: 50%;
+    }
+</style>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+               <h1 id="message">
+                   Halo pilih Baju
+               </h1>
+               <img  id="myImage"
+                     src="../img/dev/kunin.png"  >
+            </div>
+            <div class="col-md-3"></div>
+         </div>
+      </div>
+      <div class="button">
+         <button class="btn btn-warning"
+                 onclick=yellow();>
+             
+         </button>
+         <button class="btn btn-success"
+                  onclick=green();>
+             
+         </button>
+         <button class="btn btn-primary"
+                  onclick=blue();>
+         </button>
+      </div>
+   </body>
+</html>
+<script>
+    function yellow(){
+        document.getElementById('myImage')
+        .src="../img/dev/kunin.png";
+        document.getElementById('message')
+        .innerHTML="Yellow";
+    }
+     
+    function green(){
+        document.getElementById('myImage')
+        .src="../img/dev/ijo.png";
+        document.getElementById('message')
+        .innerHTML="Green";
+    }
+
+    function blue(){
+        document.getElementById('myImage')
+        .src="../img/dev/biru.png";
+        document.getElementById('message')
+        .innerHTML="Blue";
+    }
+</script>
